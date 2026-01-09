@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ng serve",
     "build": "ng build",
-    "preview": "ng serve --configuration=production"
+    "preview": "ng serve --configuration=production",
+    "deploy": "ng build --configuration=production && npx angular-cli-ghpages --dir=dist/browser"
   },
   "dependencies": {
     "rxjs": "^7.8.2",
@@ -18,7 +19,8 @@
     "@angular/build": "^21.0.0",
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "angular-cli-ghpages": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
