@@ -1,0 +1,5 @@
+{
+  "name": "3.0 clone_Tax",
+  "description": "A tool to calculate the household business tax (thuế hộ kinh doanh) in Vietnam, based on Circular 40 and Circular 88. Users can input revenue, tax period, location, and business sector to get a detailed breakdown of payable taxes and fees.",
+  "requestFramePermissions": []
+}

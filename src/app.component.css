@@ -1,0 +1,54 @@
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+button {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shadow-2xl {
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-3xl {
+  box-shadow: 0 50px 120px -20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Accordion */
+nav div > div {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Specific Card Hover */
+.group:hover .group-hover\:text-black {
+  color: #000;
+}
